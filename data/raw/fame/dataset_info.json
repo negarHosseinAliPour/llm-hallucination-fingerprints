@@ -1,0 +1,94 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "fame",
+  "dataset_size": 5188487,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/ClaudioSavelli/FAME@5c67fed496053691db3720ec3fb99825a34dfe72/data/retain-00000-of-00001.parquet": {
+      "num_bytes": 979470,
+      "checksum": null
+    },
+    "hf://datasets/ClaudioSavelli/FAME@5c67fed496053691db3720ec3fb99825a34dfe72/data/forget-00000-of-00001.parquet": {
+      "num_bytes": 258718,
+      "checksum": null
+    },
+    "hf://datasets/ClaudioSavelli/FAME@5c67fed496053691db3720ec3fb99825a34dfe72/data/test-00000-of-00001.parquet": {
+      "num_bytes": 314432,
+      "checksum": null
+    },
+    "hf://datasets/ClaudioSavelli/FAME@5c67fed496053691db3720ec3fb99825a34dfe72/data/paraphrased-00000-of-00001.parquet": {
+      "num_bytes": 159873,
+      "checksum": null
+    }
+  },
+  "download_size": 1712493,
+  "features": {
+    "identity_id": {
+      "dtype": "int32",
+      "_type": "Value"
+    },
+    "name": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "language": {
+      "names": [
+        "DE",
+        "EN",
+        "ES",
+        "FR",
+        "IT"
+      ],
+      "_type": "ClassLabel"
+    },
+    "topic_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answer": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 6900980,
+  "splits": {
+    "retain": {
+      "name": "retain",
+      "num_bytes": 3133659,
+      "num_examples": 12800,
+      "dataset_name": "fame"
+    },
+    "forget": {
+      "name": "forget",
+      "num_bytes": 794213,
+      "num_examples": 3200,
+      "dataset_name": "fame"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 983191,
+      "num_examples": 4000,
+      "dataset_name": "fame"
+    },
+    "paraphrased": {
+      "name": "paraphrased",
+      "num_bytes": 277424,
+      "num_examples": 997,
+      "dataset_name": "fame"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
