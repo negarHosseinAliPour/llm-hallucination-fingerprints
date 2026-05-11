@@ -313,7 +313,7 @@ def generate_answer(model, tokenizer, prompt, max_tokens=100):
             max_tokens=150,
             verbose=False,
         )
-    return response.strip()
+    return response.split("\nQ:")[0].strip()
 
 # TruthfulQA with instruct models 
 print("\n── TruthfulQA (instruct models) ──")
